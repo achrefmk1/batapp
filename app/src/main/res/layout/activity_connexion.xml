@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Connexion">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+         <ImageView
+             android:id="@+id/logo"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/logobatapp"
+             android:layout_alignParentTop="true"
+             android:layout_centerInParent="true"
+             android:layout_marginTop="5dp">
+         </ImageView>
+
+        <ImageView
+            android:id="@+id/rectangle_connexion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_centerVertical="true"
+            android:src="@drawable/rectangle"></ImageView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/logo"
+            android:layout_marginTop="50dp"
+            android:id="@+id/relative_button"
+            android:background="@drawable/btn_corners"
+            android:backgroundTint="@color/gray">
+
+
+            <Button
+                android:id="@+id/signup_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/login_button"
+                android:text="SignUp"
+                android:textColor="@color/white"
+                android:background="@drawable/right_corner"
+                android:onClick="actionSignup"/>
+
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/btn_corners"
+                android:backgroundTint="@color/batapp"
+                android:fontFamily="Roboto"
+                android:text="Login"
+                android:textAppearance="@style/login"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative_button"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/relative_user">
+        <ImageView
+            android:id="@+id/rect_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rest_back_text"
+
+            ></ImageView>
+
+            <ImageView
+                android:id="@+id/icon_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/username"></ImageView>
+            <EditText
+                android:layout_width="220dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/icon_user"
+                android:layout_marginLeft="10dp"
+                android:inputType="textEmailAddress"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:hint="username"
+                android:id="@+id/username"></EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative_user"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/relative_pass">
+            <ImageView
+                android:id="@+id/rect_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rest_back_text"
+
+                ></ImageView>
+
+            <ImageView
+                android:id="@+id/icon_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/password"></ImageView>
+            <EditText
+                android:layout_width="220dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/icon_pass"
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:id="@+id/password"></EditText>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button_button"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:background="@drawable/btn_corners"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/batapp"
+            android:layout_below="@id/relative_pass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="43dp"
+            android:text="Save"
+            android:textAlignment="center"
+            android:onClick="actionLogin"></Button>
+
+        <LinearLayout
+            android:id="@+id/errormsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rectangle_connexion"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/error_txt"></TextView>
+
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:id="@+id/logo_footer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_footer"
+            android:layout_alignParentBottom="true"></ImageView>
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bottom_home"
+        android:icon="@drawable/home_icon"
+        android:title="Home"
+        app:cnb_iconColor="@color/red"/>
+
+    <item
+        android:id="@+id/bottom_map"
+        android:icon="@drawable/geolocalisation"
+        android:title="Map"
+        app:cnb_iconColor="@color/gray" />
+
+    <item
+        android:id="@+id/bottom_partage"
+        android:icon="@drawable/partner_position"
+        android:title="Map"
+        app:cnb_iconColor="@color/gray" />
+
+    <item
+        android:id="@+id/bottom_profile"
+        android:icon="@drawable/profile"
+        android:title="Profile"
+        app:cnb_iconColor="@color/black"/>
+
+</menu>
+

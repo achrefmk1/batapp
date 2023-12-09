@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainLaunch">
+
+
+        <ImageView
+            android:id="@+id/launch2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/page_number"
+            android:src="@drawable/launcher_2"
+            app:layout_constraintBottom_toTopOf="@id/page_number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/page_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/logo_footer"
+            android:layout_margin="10dp"
+            android:layout_marginTop="56dp"
+            android:src="@drawable/page_number_2"
+            app:layout_constraintBottom_toTopOf="@+id/logo_footer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/launch2"/>
+
+
+        <ImageView
+            android:id="@+id/logo_footer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/logo_footer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/launch2"
+            android:layout_alignParentRight="true"
+            android:text="Let's Be Secure"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@id/page_number"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        <!--            </RelativeLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>
+

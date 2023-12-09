@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BatApp</string>
+    <string name="signup_title">SignUp Page</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="signup">SignUp</string>
+    <string name="term_use">Accept Out Terms of Conditions</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="state_list">
+
+        <item >Danger</item>
+        <item >Warning</item>
+    </string-array>
+</resources>
